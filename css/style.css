@@ -71,7 +71,8 @@ body {
 .contact-tel {
   font-style: normal;
 }
-.contact-bright-bg {
+.contact-bright-bg-mail,
+.contact-bright-bg-tel {
   color: var(--primary-text-color);
 }
 .contact-mail,
@@ -135,44 +136,50 @@ img {
   letter-spacing: 0.02em;
   color: var(--titel-text-color);
 }
-.sublist-item-tel {
-  margin-left: 50px;
+.sublist-item-mail {
+  display: flex;
 }
-.sublist-item-mail,
 .sublist-item-tel {
-  position: relative;
+  display: flex;
+  margin-left: 30px;
 }
-
-.contact-bright-bg {
-  
-  display: inline-block; 
+.contact-bright-bg-mail,
+.contact-bright-bg-tel {
+  display: flex;
+  align-items:center; 
   padding: 32px 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
+  color: var(--primary-text-color); 
 }
 .navigation-list-link:hover,
 .navigation-list-link:focus,
-.contact-bright-bg:hover,
-.contact-bright-bg:focus {
+.contact-bright-bg-mail:hover,
+.contact-bright-bg-mail:focus,
+.contact-bright-bg-tel:hover,
+.contact-bright-bg-tel:focus {
   color: var(--bright-accent-color);
 }
 .navigation .navigation-list-link.current {
   color: var(--bright-accent-color);
 }
 .icon-envelope-svg {
-  position: absolute;
-  top: 34px; 
-  left: -10px;
-  
+  margin-right: 10px;
+  fill: var(--primary-text-color);
 }
 .icon-smartphone-svg {
-  position: absolute;
-  top: 32px; 
-  left: -10px;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
 }
+.contact-bright-bg-mail:hover .icon-envelope-svg {
+  fill: var(--bright-accent-color);
+}
+.contact-bright-bg-tel:hover .icon-smartphone-svg {
+  fill: var(--bright-accent-color);
+}
+
 
 
 /* ======== END HEADER ======== */
